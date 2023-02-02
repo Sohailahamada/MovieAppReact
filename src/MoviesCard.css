@@ -1,0 +1,133 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');*/
+
+html {
+  height: 100%;
+}
+
+body 
+{
+font-size:16px;
+background-color: rgba(0,0,0,1);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(7,0,113,1) 25%, rgba(82,75,219,1) 50%, rgba(7,3,114,1) 79%, rgba(1,0,11,1) 100%);
+background-size: 100% 600%;
+ min-height: 100%;
+ -webkit-animation: animation-bg 40s infinite;
+ animation: animation-bg 40s infinite;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes animation-bg {
+0% {
+  background-position: 50% 100%;
+}
+100% {
+  background-position: 50% 0%;
+}
+}
+@keyframes animation-bg {
+0% {
+  background-position: 50% 100%;
+}
+100% {
+  background-position: 50% 0%;
+}
+}
+
+section
+{
+  margin-top:5rem;
+}
+
+.card
+{
+margin-top:5%;
+margin-bottom: 5%;
+  -webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+ transition: all .2s ease-out;
+border-radius:15px;
+border:none;
+  background-color:white;
+}
+
+
+.btn1 
+{
+opacity:0;  
+position:absolute;
+left:50%;
+top: 110%;
+ transform: translate(-50%, -50%);
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0);
+-webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+ transition: all .2s ease-out;
+border-radius: 10px;
+padding:0.8rem 1.7rem;
+border:none;
+font-weight:bold;
+}
+
+.card:hover .btn1
+{
+opacity:1;
+top: 100%;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover
+{
+box-shadow: 0 4px 18px 0 rgba(0,0,0,0.7);
+
+}
+
+h5
+{
+position: absolute;
+left:50%;
+top: 50%;
+transform: translate(-50%, -50%);
+font-size: 2.7rem;
+opacity:0.3;
+text-shadow: 1px 1px 2px black;
+-webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+ transition: all .2s ease-out;
+  font-family: 'Leckerli One', cursive;
+}
+
+.card:hover h5
+{
+opacity:1;
+  font-size: 3rem;
+}
+
+.btn1:hover 
+{
+color:white;
+border:none;
+}
+
+
+
+.card img
+{
+filter:blur(0px);
+  -webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+ transition: all .2s ease-out;
+border-radius:15px;
+}
+
+.card:hover img
+{
+filter:blur(3px);
+}
